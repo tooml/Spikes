@@ -13,9 +13,11 @@ namespace TaskSpike
 
             //Do();
             
-            Do_Two();
+            //Do_Two();
 
             //Do_Three();
+
+            Do_Four();
 
             Console.WriteLine("Main");
             Console.ReadLine();
@@ -68,6 +70,13 @@ namespace TaskSpike
                 Console.WriteLine($"Vorname: {person.Vorname}, Nachname: {person.Nachname}");
 
             Console.WriteLine();
+        }
+
+        static void Do_Four()
+        {
+            var repo = new Repository();
+
+            var persons = repo.Get_All();
         }
     }
 }
